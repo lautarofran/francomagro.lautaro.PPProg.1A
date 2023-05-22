@@ -2,7 +2,7 @@ import re
 
 # Crear una función llamada aplicarAumento que reciba como parámetro el precio de un producto y devuelva el valor del producto con un aumento del 5%. Realizar la llamada desde el main.
 
-def aplicar_aumento(precio:float) -> int:
+def aplicarAumento(precio:float) -> int:
     patron = r"^\d"
     retorno = 0.0
     if re.match(patron, precio):
@@ -11,4 +11,4 @@ def aplicar_aumento(precio:float) -> int:
     else:
         return "Lo ingresado no es un numero"
 
-print(aplicar_aumento("4819.41"))
+print(aplicarAumento("4819.41"))
